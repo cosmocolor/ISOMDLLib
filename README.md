@@ -1,7 +1,4 @@
 
-
-[![Bugs](https://sonar.kcosmo.mx/api/project_badges/measure?project=ios_isomdl-sdk_AYyDAdlG-D0ITngfkz8f&metric=bugs&token=sqb_710e8833a62aa23b26f63dd147549ce48050f88c)](Bugs)
-
 # ISOMDLLib
 ## SDK para el estándar ISO 18013
 
