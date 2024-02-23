@@ -25,6 +25,6 @@ let package = Package(
                       url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", 
                       checksum: "9e08725b0b113763dea5d77debee01eac57606a8b55bd5ecae37604cd1a60197",
                       
-                     ),
+                     )
     ]
 )
