@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "ISOMDLLib",
-            targets: ["ISOMDLLib"])
+            targets: ["ISOMDLLib", "ISOMDLLibSupportTarget"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,6 +24,14 @@ let package = Package(
         .binaryTarget(name: "ISOMDLLib", 
                       url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", 
                       checksum: "074bcfb280d9b090a122c9bd58b152135d87054b123176cefa8650b83089fc33"
-                     )
-    ]
+                     ),
+        .target(
+                name: "ISOMDLLibSupportTarget",
+                dependencies: [
+                    .product(name: "SwiftyJSON", package: "SwiftyJSON"),
+                    .product(name: "SwiftCBOR", package: "SwiftCBOR"),
+                    .product(name: "JWTDecode", package: "JWTDecode.swift")],
+                path: "ISOMDLLib")
+    ],
+    swiftLanguageVersions: [.v5]
 )
