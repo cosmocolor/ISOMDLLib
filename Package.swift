@@ -13,10 +13,9 @@ let package = Package(
             targets: ["ISOMDLLib"])
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON", from: "5.0.0"),
         .package(url: "https://github.com/valpackett/SwiftCBOR", from: "0.4.6"),
-        .package(url: "https://github.com/auth0/JWTDecode.swift.git", from: "3.1.0")
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.9.1"))
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
