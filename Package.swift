@@ -13,16 +13,23 @@ let package = Package(
             targets: ["ISOMDLLib"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON", from: "5.0.0"),
-        .package(url: "https://github.com/valpackett/SwiftCBOR", from: "0.4.6"),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.9.1"))
+        .package(url: "https://github.com/valpackett/SwiftCBOR.git", from: "0.4.6"),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.9.1"),
+        .package(url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.15.3")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
+        .target(
+            name: "ISOMDLLib",
+            dependencies: [
+                "SwiftCBOR",
+                "Alamofire",
+                .product(name: "SQLite", package: "SQLite.swift")
+            ]),
         .binaryTarget(name: "ISOMDLLib", 
                       url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", 
-                      checksum: "0e39193f466881f5b30da5a79d13ae3b4286f897eb57e2d60daf74da3cc61c27"
+                      checksum: "4e41958dcc537258ce7b533d5cea37641e16dc3c1c8b5167fef46719fa83f3f6"
                      )
         
     ],
