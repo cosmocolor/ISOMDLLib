@@ -20,13 +20,6 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "ISOMDLLib",
-            dependencies: [
-                "SwiftCBOR",
-                "Alamofire",
-                .product(name: "SQLite", package: "SQLite.swift")
-            ]),
         .binaryTarget(name: "ISOMDLLib", 
                       url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", 
                       checksum: "4e41958dcc537258ce7b533d5cea37641e16dc3c1c8b5167fef46719fa83f3f6"
