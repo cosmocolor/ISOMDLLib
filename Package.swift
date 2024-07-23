@@ -22,7 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(name: "ISOMDLLib", 
                       url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", 
-                      checksum: "4e41958dcc537258ce7b533d5cea37641e16dc3c1c8b5167fef46719fa83f3f6"
+                      checksum: "0c765019e8cf6f63793836015a48867e8e661a32a8b9fde37802b04dc47a30d7"
                      )
         
     ],
