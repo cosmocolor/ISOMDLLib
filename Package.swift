@@ -16,8 +16,8 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(name: "ISOMDLLib", 
-                      url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib-b2aec1.xcframework.zip", 
-                      checksum: "6d22f707b745c536bdb0c1ccff44457d8bb3cd3bd96c6b4d673eb52d2c8d40a7"
+                      url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib-4e3fb3.xcframework.zip", 
+                      checksum: "1f1c5447caa6358dd868ee34f7062b0f303e771dc343ec928d1de8a32422ebd2"
                      )
         
     ],
